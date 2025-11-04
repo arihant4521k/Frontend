@@ -16,8 +16,7 @@ const MenuItem = ({ item, onAddToCart }) => {
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
       {item.imageUrl && (
         <img
-          src={`${import.meta.env.VITE_API_URL
-            ?.replace('/api', '') || 'http://localhost:5000'}${item.imageUrl}`}
+          src={item.imageUrl}
           alt={item.name}
           className="w-full h-48 object-cover"
         />

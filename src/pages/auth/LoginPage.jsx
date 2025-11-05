@@ -22,7 +22,7 @@ const LoginPage = () => {
       } else if (user.role === 'staff') {
         navigate('/staff');
       } else {
-        navigate('/');
+        navigate('/menu');
       }
     }
   }, [user, navigate]);
